@@ -1,5 +1,3 @@
-# collect_data.py
-
 import cv2
 import mediapipe as mp
 import csv
@@ -16,7 +14,7 @@ label = input("Enter the alphabet you want to record (A-Z): ").upper()
 
 cap = cv2.VideoCapture(0)
 counter = 0
-max_samples = 100
+max_samples = 200
 
 csv_file = open(f"{data_dir}/{label}.csv", mode='w', newline='')
 csv_writer = csv.writer(csv_file)
